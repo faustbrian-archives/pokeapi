@@ -1,7 +1,7 @@
 {
     "name": "faustbrian/pokeapi-php-client",
     "description": "A Pokeapi Client for PHP",
-    "keywords": ["api", "faustbrian", "faustbrian-pokeapi", "pokeapi", "Brian Faust", "faustbrian"],
+    "keywords": ["api", "pokeapi", "Brian Faust", "faustbrian"],
     "license": "MIT",
     "authors": [{
         "name": "Brian Faust",
