@@ -3,7 +3,7 @@
 /*
  * This file is part of Pokeapi PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.de>
+ * (c) Brian Faust <hello@brianfaust.me>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
@@ -11,12 +11,38 @@
 
 namespace BrianFaust\Pokeapi;
 
-use BrianFaust\Unified\AbstractClient;
+use BrianFaust\Http\Http;
 
-class Client extends AbstractClient
+class Client
 {
-    protected function getServiceProvider()
+    /**
+     * @var string
+     */
+    private $version;
+
+    /**
+     * Create a new Pokeapi Client instance.
+     *
+     * @param string $version
+     */
+    public function __construct(string $version = 'v2')
     {
-        return ServiceProvider::class;
+        $this->version = $version;
+    }
+
+    /**
+     * Create a new API service instance.
+     *
+     * @param string $name
+     *
+     * @return \BrianFaust\Pokeapi\API\AbstractAPI
+     */
+    public function api(string $name): API\AbstractAPI
+    {
+        $client = Http::withBaseUri("http://pokeapi.co/api/{$this->version}/");
+
+        $class = "BrianFaust\\Pokeapi\\API\\{$this->version}\\{$name}";
+
+        return new $class($client);
     }
 }
