@@ -5,21 +5,21 @@ declare(strict_types=1);
 /*
  * This file is part of Pokeapi PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Pokeapi\API\v2;
+namespace Plients\Pokeapi\API\v2;
 
-use BrianFaust\Http\HttpResponse;
-use BrianFaust\Pokeapi\API\AbstractAPI;
+use Plients\Http\HttpResponse;
+use Plients\Pokeapi\API\AbstractAPI;
 
 class Items extends AbstractAPI
 {
     /**
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function items(): HttpResponse
     {
@@ -29,7 +29,7 @@ class Items extends AbstractAPI
     /**
      * @param int|string $idOrName
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function item($idOrName): HttpResponse
     {
@@ -37,7 +37,7 @@ class Items extends AbstractAPI
     }
 
     /**
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function attributes(): HttpResponse
     {
@@ -47,7 +47,7 @@ class Items extends AbstractAPI
     /**
      * @param int|string $idOrName
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function attribute($idOrName): HttpResponse
     {
@@ -55,7 +55,7 @@ class Items extends AbstractAPI
     }
 
     /**
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function categories(): HttpResponse
     {
@@ -65,7 +65,7 @@ class Items extends AbstractAPI
     /**
      * @param int|string $idOrName
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function category($idOrName): HttpResponse
     {
@@ -73,7 +73,7 @@ class Items extends AbstractAPI
     }
 
     /**
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function flingEffects(): HttpResponse
     {
@@ -83,7 +83,7 @@ class Items extends AbstractAPI
     /**
      * @param int|string $idOrName
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function flingEffect($idOrName): HttpResponse
     {
@@ -91,7 +91,7 @@ class Items extends AbstractAPI
     }
 
     /**
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function pockets(): HttpResponse
     {
@@ -101,7 +101,7 @@ class Items extends AbstractAPI
     /**
      * @param int|string $idOrName
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function pocket($idOrName): HttpResponse
     {

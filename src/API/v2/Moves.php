@@ -5,21 +5,21 @@ declare(strict_types=1);
 /*
  * This file is part of Pokeapi PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Pokeapi\API\v2;
+namespace Plients\Pokeapi\API\v2;
 
-use BrianFaust\Http\HttpResponse;
-use BrianFaust\Pokeapi\API\AbstractAPI;
+use Plients\Http\HttpResponse;
+use Plients\Pokeapi\API\AbstractAPI;
 
 class Moves extends AbstractAPI
 {
     /**
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function moves(): HttpResponse
     {
@@ -29,7 +29,7 @@ class Moves extends AbstractAPI
     /**
      * @param int|string $idOrName
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function move($idOrName): HttpResponse
     {
@@ -37,7 +37,7 @@ class Moves extends AbstractAPI
     }
 
     /**
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function ailments(): HttpResponse
     {
@@ -47,7 +47,7 @@ class Moves extends AbstractAPI
     /**
      * @param int|string $idOrName
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function ailment($idOrName): HttpResponse
     {
@@ -55,7 +55,7 @@ class Moves extends AbstractAPI
     }
 
     /**
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function battleStyles(): HttpResponse
     {
@@ -65,7 +65,7 @@ class Moves extends AbstractAPI
     /**
      * @param int|string $idOrName
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function battleStyle($idOrName): HttpResponse
     {
@@ -73,7 +73,7 @@ class Moves extends AbstractAPI
     }
 
     /**
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function categories(): HttpResponse
     {
@@ -83,7 +83,7 @@ class Moves extends AbstractAPI
     /**
      * @param int|string $idOrName
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function category($idOrName): HttpResponse
     {
@@ -91,7 +91,7 @@ class Moves extends AbstractAPI
     }
 
     /**
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function damageClasses(): HttpResponse
     {
@@ -101,7 +101,7 @@ class Moves extends AbstractAPI
     /**
      * @param int|string $idOrName
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function damageClass($idOrName): HttpResponse
     {
@@ -109,7 +109,7 @@ class Moves extends AbstractAPI
     }
 
     /**
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function learnMethods(): HttpResponse
     {
@@ -119,7 +119,7 @@ class Moves extends AbstractAPI
     /**
      * @param int|string $idOrName
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function learnMethod($idOrName): HttpResponse
     {
@@ -127,7 +127,7 @@ class Moves extends AbstractAPI
     }
 
     /**
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function targets(): HttpResponse
     {
@@ -137,7 +137,7 @@ class Moves extends AbstractAPI
     /**
      * @param int|string $idOrName
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function target($idOrName): HttpResponse
     {

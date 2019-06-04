@@ -5,15 +5,15 @@ declare(strict_types=1);
 /*
  * This file is part of Pokeapi PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Pokeapi;
+namespace Plients\Pokeapi;
 
-use BrianFaust\Http\Http;
+use Plients\Http\Http;
 
 class Client
 {
@@ -37,13 +37,13 @@ class Client
      *
      * @param string $name
      *
-     * @return \BrianFaust\Pokeapi\API\AbstractAPI
+     * @return \Plients\Pokeapi\API\AbstractAPI
      */
     public function api(string $name): API\AbstractAPI
     {
         $client = Http::withBaseUri("http://pokeapi.co/api/{$this->version}/");
 
-        $class = "BrianFaust\\Pokeapi\\API\\{$this->version}\\{$name}";
+        $class = "Plients\\Pokeapi\\API\\{$this->version}\\{$name}";
 
         return new $class($client);
     }

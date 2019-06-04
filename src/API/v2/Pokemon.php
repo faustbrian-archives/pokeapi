@@ -5,21 +5,21 @@ declare(strict_types=1);
 /*
  * This file is part of Pokeapi PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Pokeapi\API\v2;
+namespace Plients\Pokeapi\API\v2;
 
-use BrianFaust\Http\HttpResponse;
-use BrianFaust\Pokeapi\API\AbstractAPI;
+use Plients\Http\HttpResponse;
+use Plients\Pokeapi\API\AbstractAPI;
 
 class Pokemon extends AbstractAPI
 {
     /**
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function abilities(): HttpResponse
     {
@@ -29,7 +29,7 @@ class Pokemon extends AbstractAPI
     /**
      * @param int|string $idOrName
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function ability($idOrName): HttpResponse
     {
@@ -37,7 +37,7 @@ class Pokemon extends AbstractAPI
     }
 
     /**
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function characteristics(): HttpResponse
     {
@@ -47,7 +47,7 @@ class Pokemon extends AbstractAPI
     /**
      * @param int|string $idOrName
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function characteristic($idOrName): HttpResponse
     {
@@ -55,7 +55,7 @@ class Pokemon extends AbstractAPI
     }
 
     /**
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function eggGroups(): HttpResponse
     {
@@ -65,7 +65,7 @@ class Pokemon extends AbstractAPI
     /**
      * @param int|string $idOrName
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function eggGroup($idOrName): HttpResponse
     {
@@ -73,7 +73,7 @@ class Pokemon extends AbstractAPI
     }
 
     /**
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function genders(): HttpResponse
     {
@@ -83,7 +83,7 @@ class Pokemon extends AbstractAPI
     /**
      * @param int|string $idOrName
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function gender($idOrName): HttpResponse
     {
@@ -91,7 +91,7 @@ class Pokemon extends AbstractAPI
     }
 
     /**
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function growthRates(): HttpResponse
     {
@@ -101,7 +101,7 @@ class Pokemon extends AbstractAPI
     /**
      * @param int|string $idOrName
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function growthRate($idOrName): HttpResponse
     {
@@ -109,7 +109,7 @@ class Pokemon extends AbstractAPI
     }
 
     /**
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function natures(): HttpResponse
     {
@@ -119,7 +119,7 @@ class Pokemon extends AbstractAPI
     /**
      * @param int|string $idOrName
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function nature($idOrName): HttpResponse
     {
@@ -127,7 +127,7 @@ class Pokemon extends AbstractAPI
     }
 
     /**
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function pokeathlonStats(): HttpResponse
     {
@@ -137,7 +137,7 @@ class Pokemon extends AbstractAPI
     /**
      * @param int|string $idOrName
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function pokeathlonStat($idOrName): HttpResponse
     {
@@ -145,7 +145,7 @@ class Pokemon extends AbstractAPI
     }
 
     /**
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function pokemons(): HttpResponse
     {
@@ -155,7 +155,7 @@ class Pokemon extends AbstractAPI
     /**
      * @param int|string $idOrName
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function pokemon($idOrName): HttpResponse
     {
@@ -163,7 +163,7 @@ class Pokemon extends AbstractAPI
     }
 
     /**
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function colors(): HttpResponse
     {
@@ -173,7 +173,7 @@ class Pokemon extends AbstractAPI
     /**
      * @param int|string $idOrName
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function color($idOrName): HttpResponse
     {
@@ -181,7 +181,7 @@ class Pokemon extends AbstractAPI
     }
 
     /**
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function forms(): HttpResponse
     {
@@ -191,7 +191,7 @@ class Pokemon extends AbstractAPI
     /**
      * @param int|string $idOrName
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function form($idOrName): HttpResponse
     {
@@ -199,7 +199,7 @@ class Pokemon extends AbstractAPI
     }
 
     /**
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function habitats(): HttpResponse
     {
@@ -209,7 +209,7 @@ class Pokemon extends AbstractAPI
     /**
      * @param int|string $idOrName
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function habitat($idOrName): HttpResponse
     {
@@ -217,7 +217,7 @@ class Pokemon extends AbstractAPI
     }
 
     /**
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function shapes(): HttpResponse
     {
@@ -230,7 +230,7 @@ class Pokemon extends AbstractAPI
     }
 
     /**
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function species(): HttpResponse
     {
@@ -240,7 +240,7 @@ class Pokemon extends AbstractAPI
     /**
      * @param int|string $idOrName
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function specie($idOrName): HttpResponse
     {
@@ -248,7 +248,7 @@ class Pokemon extends AbstractAPI
     }
 
     /**
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function stats(): HttpResponse
     {
@@ -258,7 +258,7 @@ class Pokemon extends AbstractAPI
     /**
      * @param int|string $idOrName
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function stat($idOrName): HttpResponse
     {
@@ -266,7 +266,7 @@ class Pokemon extends AbstractAPI
     }
 
     /**
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function types(): HttpResponse
     {
@@ -276,7 +276,7 @@ class Pokemon extends AbstractAPI
     /**
      * @param int|string $idOrName
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function type($idOrName): HttpResponse
     {

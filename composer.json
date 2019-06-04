@@ -1,13 +1,19 @@
 {
-    "name": "faustbrian/pokeapi-php-client",
+    "name": "plients/pokeapi",
     "description": "A Pokeapi Client for PHP",
-    "keywords": ["api", "http", "pokeapi"],
+    "keywords": [
+        "api",
+        "http",
+        "pokeapi"
+    ],
     "license": "MIT",
-    "authors": [{
-        "name": "Brian Faust",
-        "email": "hello@brianfaust.me",
-        "homepage": "https://brianfaust.me"
-    }],
+    "authors": [
+        {
+            "name": "Brian Faust",
+            "email": "hello@basecode.sh",
+            "homepage": "https://basecode.sh"
+        }
+    ],
     "require": {
         "php": "^7.1",
         "faustbrian/http": "^1.0"
@@ -18,12 +24,12 @@
     },
     "autoload": {
         "psr-4": {
-            "BrianFaust\\Pokeapi\\": "src"
+            "Plients\\Pokeapi\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "BrianFaust\\Tests\\Pokeapi\\": "tests"
+            "Plients\\Tests\\Pokeapi\\": "tests"
         }
     },
     "config": {

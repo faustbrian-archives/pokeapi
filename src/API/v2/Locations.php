@@ -5,21 +5,21 @@ declare(strict_types=1);
 /*
  * This file is part of Pokeapi PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Pokeapi\API\v2;
+namespace Plients\Pokeapi\API\v2;
 
-use BrianFaust\Http\HttpResponse;
-use BrianFaust\Pokeapi\API\AbstractAPI;
+use Plients\Http\HttpResponse;
+use Plients\Pokeapi\API\AbstractAPI;
 
 class Locations extends AbstractAPI
 {
     /**
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function locations(): HttpResponse
     {
@@ -29,7 +29,7 @@ class Locations extends AbstractAPI
     /**
      * @param int|string $idOrName
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function location($idOrName): HttpResponse
     {
@@ -37,7 +37,7 @@ class Locations extends AbstractAPI
     }
 
     /**
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function areas(): HttpResponse
     {
@@ -47,7 +47,7 @@ class Locations extends AbstractAPI
     /**
      * @param int|string $idOrName
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function area($idOrName): HttpResponse
     {
@@ -55,7 +55,7 @@ class Locations extends AbstractAPI
     }
 
     /**
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function parkAreas(): HttpResponse
     {
@@ -65,7 +65,7 @@ class Locations extends AbstractAPI
     /**
      * @param int|string $idOrName
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function parkArea($idOrName): HttpResponse
     {
@@ -73,7 +73,7 @@ class Locations extends AbstractAPI
     }
 
     /**
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function regions(): HttpResponse
     {
@@ -83,7 +83,7 @@ class Locations extends AbstractAPI
     /**
      * @param int|string $idOrName
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function region($idOrName): HttpResponse
     {

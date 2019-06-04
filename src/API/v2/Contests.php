@@ -5,21 +5,21 @@ declare(strict_types=1);
 /*
  * This file is part of Pokeapi PHP Client.
  *
- * (c) Brian Faust <hello@brianfaust.me>
+ * (c) Brian Faust <hello@basecode.sh>
  *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
 
-namespace BrianFaust\Pokeapi\API\v2;
+namespace Plients\Pokeapi\API\v2;
 
-use BrianFaust\Http\HttpResponse;
-use BrianFaust\Pokeapi\API\AbstractAPI;
+use Plients\Http\HttpResponse;
+use Plients\Pokeapi\API\AbstractAPI;
 
 class Contests extends AbstractAPI
 {
     /**
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function types(): HttpResponse
     {
@@ -29,7 +29,7 @@ class Contests extends AbstractAPI
     /**
      * @param int|string $idOrName
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function type($idOrName): HttpResponse
     {
@@ -37,7 +37,7 @@ class Contests extends AbstractAPI
     }
 
     /**
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function effects(): HttpResponse
     {
@@ -47,7 +47,7 @@ class Contests extends AbstractAPI
     /**
      * @param int|string $idOrName
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function effect($idOrName): HttpResponse
     {
@@ -55,7 +55,7 @@ class Contests extends AbstractAPI
     }
 
     /**
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function superEffects(): HttpResponse
     {
@@ -65,7 +65,7 @@ class Contests extends AbstractAPI
     /**
      * @param int|string $idOrName
      *
-     * @return \BrianFaust\Http\HttpResponse
+     * @return \Plients\Http\HttpResponse
      */
     public function superEffect($idOrName): HttpResponse
     {
